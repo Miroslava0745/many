@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		
+		.box1{
+			height: 100px;
+			width: 100px;
+			position: absolute;
+			transition:2s ;
+			background:url(1.gif);
+			background-size: 100% 100%;
+			left: 100px;
+			top: -110px;
+		}
+
+		.box2{
+			height: 100px;
+			width: 100px;
+			position: absolute;
+			transition: 4s;
+			background:url(1.gif);
+			background-size: 100% 100%;
+			left: 300px;
+			top: -110px;
+		}
+
+		.box3{
+			height: 100px;
+			width: 100px;
+			position: absolute;
+			transition:3s ;
+			background:url(1.gif);
+			background-size: 100% 100%;
+			left:470px ;
+			top: -110px;
+		}
+
+		.box4{
+			height: 100px;
+			width: 100px;
+			position: absolute;
+			transition: 2s;
+			background:url(1.gif);
+			background-size: 100% 100%;
+			left: 610px;
+			top: -110px;
+		}
+
+		.box5{
+			height: 100px;
+			width: 100px;
+			position: absolute;
+			transition:4s ;
+			background:url(1.gif);
+			background-size: 100% 100%;
+			left: 720px;
+			top: -110px;
+		}
+
+		.box6{
+			height: 100px;
+			width: 100px;
+			position: absolute;
+			transition:2s ;
+			background:url(1.gif);
+			background-size: 100% 100%;
+			left:890px ;
+			top: -110px;
+		}
+
+		.box7{
+			height: 100px;
+			width: 100px;
+			position: absolute;
+			transition:3s ;
+			background:url(1.gif);
+			background-size: 100% 100%;
+			left:1060px ;
+			top: -110px;
+		}
+
+		.box8{
+			height: 100px;
+			width: 100px;
+			position: absolute;
+			transition:4s ;
+			background:url(1.gif);
+			background-size: 100% 100%;
+			left:1270px ;
+			top: -110px;
+		}
+
+		.box9{
+			height: 100px;
+			width: 100px;
+			position: absolute;
+			transition: 2s;
+			background:url(1.gif);
+			background-size: 100% 100%;
+			left:1480px ;
+			top: -110px;
+		}
+
+		.box10{
+			height: 100px;
+			width: 100px;
+			position: absolute;
+			transition: 3s;
+			background:url(1.gif);
+			background-size: 100% 100%;
+			left: 1700px;
+			top: -110px;
+		}
+
+		.btn{
+			background: lightcoral;
+			width: 200px;
+			height: 40px;
+			border-radius: 20px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 300px;
+			font-weight: bold;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="div1">
+		<div class="box1"></div>
+		<div class="box2"></div>
+		<div class="box3"></div>
+		<div class="box4"></div>
+		<div class="box5"></div>
+		<div class="box6"></div>
+		<div class="box7"></div>
+		<div class="box8"></div>
+		<div class="box9"></div>
+		<div class="box10"></div>
+
+		<div style="display: flex;">
+			<button class="btn">начать дождь из денег</button>
+		</div>
+		<div style="position: absolute; top: 0px; left: 0px; background: lightpink; width: 300px; height: 150px;">
+			<h1>нужно поймать:5</h1>
+			<h1>поймано: <span class="text">0</span> из 5</h1>
+		</div>
+		<button class="btn2" style="height: 30px; width: 150px; background-color: lightgreen;position: absolute; top: 160px;">заново</button>
+	</div>	
+	<div class="div2" style="display: none;">
+		<h1 style="text-align: center;">МОЛОДЕЦ, ТЫ ПОБЕДИЛ!!!</h1>
+		<div style="display: flex;">
+			<button class="btn3" style="margin-left: auto; margin-right: auto; height: 30px; width: 150px; background-color: lightgreen;">играть снова</button>
+		</div>	
+	</div>
+
+	<script type="text/javascript">
+
+		let num = 0
+
+		document.querySelector(".box1").onclick = function(){
+			num = num + 1
+			document.querySelector(".text").innerHTML = num
+			document.querySelector(".box1").style.display = "none"
+			if (num == 5){
+				document.querySelector(".div1").style.display = "none"
+				document.querySelector(".div2").style.display = "block"
+			}
+		}
+		document.querySelector(".box2").onclick = function(){
+			num = num + 1
+			document.querySelector(".text").innerHTML = num
+			document.querySelector(".box2").style.display = "none"
+			if (num == 5){
+				document.querySelector(".div1").style.display = "none"
+				document.querySelector(".div2").style.display = "block"
+			}
+		}
+		document.querySelector(".box3").onclick = function(){
+			num = num + 1
+			document.querySelector(".text").innerHTML = num
+			document.querySelector(".box3").style.display = "none"
+			if (num == 5){
+				document.querySelector(".div1").style.display = "none"
+				document.querySelector(".div2").style.display = "block"
+			}
+		}
+		document.querySelector(".box4").onclick = function(){
+			num = num + 1
+			document.querySelector(".text").innerHTML = num
+			document.querySelector(".box4").style.display = "none"
+			if (num == 5){
+				document.querySelector(".div1").style.display = "none"
+				document.querySelector(".div2").style.display = "block"
+			}
+		}
+		document.querySelector(".box5").onclick = function(){
+			num = num + 1
+			document.querySelector(".text").innerHTML = num
+			document.querySelector(".box5").style.display = "none"
+			if (num == 5){
+				document.querySelector(".div1").style.display = "none"
+				document.querySelector(".div2").style.display = "block"
+			}
+		}
+		document.querySelector(".box6").onclick = function(){
+			num = num + 1
+			document.querySelector(".text").innerHTML = num
+			document.querySelector(".box6").style.display = "none"
+			if (num == 5){
+				document.querySelector(".div1").style.display = "none"
+				document.querySelector(".div2").style.display = "block"
+			}
+		}
+		document.querySelector(".box7").onclick = function(){
+			num = num + 1
+			document.querySelector(".text").innerHTML = num
+			document.querySelector(".box7").style.display = "none"
+			if (num == 5){
+				document.querySelector(".div1").style.display = "none"
+				document.querySelector(".div2").style.display = "block"
+			}
+		}
+		document.querySelector(".box8").onclick = function(){
+			num = num + 1
+			document.querySelector(".text").innerHTML = num
+			document.querySelector(".box8").style.display = "none"
+			if (num == 5){
+				document.querySelector(".div1").style.display = "none"
+				document.querySelector(".div2").style.display = "block"
+			}
+		}
+		document.querySelector(".box9").onclick = function(){
+			num = num + 1
+			document.querySelector(".text").innerHTML = num
+			document.querySelector(".box9").style.display = "none"
+			if (num == 5){
+				document.querySelector(".div1").style.display = "none"
+				document.querySelector(".div2").style.display = "block"
+			}
+		}
+		document.querySelector(".box10").onclick = function(){
+			num = num + 1
+			document.querySelector(".text").innerHTML = num
+			document.querySelector(".box10").style.display = "none"
+			if (num == 5){
+				document.querySelector(".div1").style.display = "none"
+				document.querySelector(".div2").style.display = "block"
+			}
+		}
+		
+		document.querySelector(".btn").onclick = function(){
+			document.querySelector(".box1").style.top = "1000px"
+			document.querySelector(".box2").style.top = "1000px"
+			document.querySelector(".box3").style.top = "1000px"
+			document.querySelector(".box4").style.top = "1000px"
+			document.querySelector(".box5").style.top = "1000px"
+			document.querySelector(".box6").style.top = "1000px"
+			document.querySelector(".box7").style.top = "1000px"
+			document.querySelector(".box8").style.top = "1000px"
+			document.querySelector(".box9").style.top = "1000px"
+			document.querySelector(".box10").style.top = "1000px"
+		}
+		document.querySelector(".btn3").onclick = function(){
+			document.querySelector(".box1").style.top = "-100px"
+			document.querySelector(".box2").style.top = "-100px"
+			document.querySelector(".box3").style.top = "-100px"
+			document.querySelector(".box4").style.top = "-100px"
+			document.querySelector(".box5").style.top = "-100px"
+			document.querySelector(".box6").style.top = "-100px"
+			document.querySelector(".box7").style.top = "-100px"
+			document.querySelector(".box8").style.top = "-100px"
+			document.querySelector(".box9").style.top = "-100px"
+			document.querySelector(".box10").style.top = "-100px"
+			document.querySelector(".div2").style.display = "none"
+			document.querySelector(".div1").style.display = "block"
+			document.querySelector(".box1").style.display = "block"
+			document.querySelector(".box2").style.display = "block"
+			document.querySelector(".box3").style.display = "block"
+			document.querySelector(".box4").style.display = "block"
+			document.querySelector(".box5").style.display = "block"
+			document.querySelector(".box6").style.display = "block"
+			document.querySelector(".box7").style.display = "block"
+			document.querySelector(".box8").style.display = "block"
+			document.querySelector(".box9").style.display = "block"
+			document.querySelector(".box10").style.display = "block"
+			num = num - 5
+			document.querySelector(".text").innerHTML = num
+		}
+		document.querySelector(".btn2").onclick = function(){
+			document.querySelector(".box1").style.top = "-100px"
+			document.querySelector(".box2").style.top = "-100px"
+			document.querySelector(".box3").style.top = "-100px"
+			document.querySelector(".box4").style.top = "-100px"
+			document.querySelector(".box5").style.top = "-100px"
+			document.querySelector(".box6").style.top = "-100px"
+			document.querySelector(".box7").style.top = "-100px"
+			document.querySelector(".box8").style.top = "-100px"
+			document.querySelector(".box9").style.top = "-100px"
+			document.querySelector(".box10").style.top = "-100px"
+			document.querySelector(".box1").style.display = "block"
+			document.querySelector(".box2").style.display = "block"
+			document.querySelector(".box3").style.display = "block"
+			document.querySelector(".box4").style.display = "block"
+			document.querySelector(".box5").style.display = "block"
+			document.querySelector(".box6").style.display = "block"
+			document.querySelector(".box7").style.display = "block"
+			document.querySelector(".box8").style.display = "block"
+			document.querySelector(".box9").style.display = "block"
+			document.querySelector(".box10").style.display = "block"
+			num = num - num
+			document.querySelector(".text").innerHTML = num
+		}
+
+	</script>
+
+</body>
+</html>
